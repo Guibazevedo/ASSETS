@@ -110,8 +110,8 @@ h3{
 .page3 {
     align-items: center;
     padding-block: 3%;
-    margin-left: 7%;
     font-family: serif;
+
 }
 
 h2 {
@@ -124,7 +124,7 @@ h5 {
     color: white;
     padding-top: 7%;
     margin-bottom: 15%;
-    ;
+    padding-left: 10%;
 }
 
 .showroom {
@@ -132,6 +132,78 @@ h5 {
     margin-bottom: 8%;
     position: relative;
 }
+
+.page5{
+    background-color: black;
+}
+
+.titulopage5{
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: white;
+}
+
+.imgperfil{
+    padding-top: 10%;
+    padding-bottom: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagefinal{
+    display: grid;
+    align-items: center;
+    justify-content: center;     
+    color: white;
+}
+
+.titulopagefinal{
+    text-align: center;
+    padding-top: 3%;
+}
+
+.textrodapefinal{
+    text-align: right;
+}
+
+.rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30%;
+}
+
+.titulopage3{
+    margin-bottom: 15%;
+    text-align: center;
+    color: white;
+    padding-bottom: 25%;
+    margin-left: 50%;   
+}
+
+.lista {
+    color: white;
+    margin-bottom: 15%;
+    margin-top: 20%;
+    margin-left: 30%;
+}
+
+.icones-final {
+    padding-left: 17%;
+    padding-top: 1%;
+    color: white;
+    padding-bottom: 2%;
+    align-items: center;
+    justify-content: center;
+}
+
+.video {
+    padding-left: 10%;
+}
+
+
 
 
 
