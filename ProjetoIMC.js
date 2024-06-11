@@ -28,17 +28,17 @@ function calcular() {
 
             var maisBaratoGeral = valores.length > 0 ? valores[0] : null;
 
-            document.getElementById('basicoA').innerText = truncarNumero(planosA.basico);
-            document.getElementById('standardA').innerText = truncarNumero(planosA.standard);
-            document.getElementById('premiumA').innerText = truncarNumero(planosA.premium);
+            document.getElementById('basicoA').innerText = trancarNumero(planosA.basico);
+            document.getElementById('standardA').innerText = trancarNumero(planosA.standard);
+            document.getElementById('premiumA').innerText = trancarNumero(planosA.premium);
 
-            document.getElementById('basicoB').innerText = truncarNumero(planosB.basico);
-            document.getElementById('standardB').innerText = truncarNumero(planosB.standard);
-            document.getElementById('premiumB').innerText = truncarNumero(planosB.premium);
+            document.getElementById('basicoB').innerText = trancarNumero(planosB.basico);
+            document.getElementById('standardB').innerText = trancarNumero(planosB.standard);
+            document.getElementById('premiumB').innerText = trancarNumero(planosB.premium);
 
             if (maisBaratoGeral) {
                 document.getElementById('maisBaratoNome').innerText = maisBaratoGeral.nome;
-                document.getElementById('maisBaratoValor').innerText = truncarNumero(maisBaratoGeral.valor);
+                document.getElementById('maisBaratoValor').innerText = trancarNumero(maisBaratoGeral.valor);
                 document.getElementById('maisBaratoOperadora').innerText = maisBaratoGeral.operadora;
             } else {
                 document.getElementById('maisBaratoNome').innerText = '';
@@ -48,7 +48,7 @@ function calcular() {
 
             document.getElementById('resultado').classList.remove('hidden');
 
-            function truncarNumero(numero) {
+            function trancarNumero(numero) {
                 return Math.floor(numero * 100) / 100;
             }
         } else {
