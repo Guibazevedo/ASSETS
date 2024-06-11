@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Planos de Saúde</title>
+    <script src="ProjetoIMC.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/meu-estilo.css">
+</head>
+
+<body>
+    <div class="container-fluid meu-projeto">
+        <div class="text-center">
+            <h1 class="titulo">Life Health</h1>
+            <h5 class="sub-titulo">Bem-vindo à nossa página LifeHealth! Aqui, oferecemos uma ferramenta que, 
+                a partir do cálculo do seu Índice de Massa Corporal (IMC), apresentamos os valores de três tipos de planos de saúde
+                 personalizados conforme o seu perfil.
+                 <p></p>
+                 Como funciona:
+                 <p></p>
+                 Insira sua idade, seu peso(kg) e sua altura(cm) para que possamos calcular o seu IMC.
+                 Abaixo, estará os valores de três tipos planos de saúde recomendados para você, baseados na faixa de IMC 
+                em que você se encontra.
+                 </h5>
+        </div>
+        <div class="forms">
+            <label for="idade" class="form-label">Idade</label>
+            <input type="number" id="idade" class="form-control">
+            <label for="peso" class="form-label">Peso (kg)</label>
+            <input type="number" id="peso" class="form-control">
+            <label for="altura" class="form-label">Altura (cm)</label>
+            <input type="number" id="altura" class="form-control">
+            <div class="text-center botao">
+                <button class="btn btn-primary" onclick="calcular()">Calcular</button>
+            </div>
+            <div id="resultado" class="text-center">
+                <div class="planos">
+                    <div class="plano">
+                        <div class="plano-nome">Plano Básico</div>
+                        <div class="operadoraA">Operadora A: R$ <div id="basicoA" style="display: inline;"></div></div>
+                        <div class="operadoraB">Operadora B: R$ <div id="basicoB" style="display: inline;"></div></div>
+                    </div>
+                    <div class="plano">
+                        <div class="plano-nome">Plano Standard</div>
+                        <div class="operadoraA">Operadora A: R$ <div id="standardA" style="display: inline;"></div></div>
+                        <div class="operadoraB">Operadora B: R$ <div id="standardB" style="display: inline;"></div></div>
+                    </div>
+                    <div class="plano">
+                        <div class="plano-nome">Plano Premium</div>
+                        <div class="operadoraA">Operadora A: R$ <div id="premiumA" style="display: inline;"></div></div>
+                        <div class="operadoraB">Operadora B: R$ <div id="premiumB" style="display: inline;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Planos de Saúde</title>
+    <script src="ProjetoIMC.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/meu-estilo.css">
+</head>
+
+<body>
+    <div class="container-fluid meu-projeto">
+        <div class="text-center">
+            <h1 class="titulo">Life Health <img src="logo.png.png" alt="logo" width="70px"></h1>
+            <h5 class="sub-titulo">
+                Bem-vindo à nossa página LifeHealth! Aqui, oferecemos uma ferramenta que, a partir do cálculo do seu
+                Índice de Massa Corporal (IMC), apresentamos os valores de três tipos de planos de saúde personalizados
+                conforme o seu perfil.
+                <p></p>
+                Como funciona:
+                <p></p>
+                Insira sua idade, seu peso(kg) e sua altura(cm) para que possamos calcular o seu IMC. Abaixo, estarão os
+                valores de três tipos de planos de saúde recomendados para você, baseados na faixa de IMC em que você se
+                encontra.
+            </h5>
+        </div>
+        <div class="forms">
+            <label for="idade" class="form-label">Idade</label>
+            <input type="number" id="idade" class="form-control">
+            <label for="peso" class="form-label">Peso (kg)</label>
+            <input type="number" id="peso" class="form-control">
+            <label for="altura" class="form-label">Altura (cm)</label>
+            <input type="number" id="altura" class="form-control">
+            <div class="text-center botao">
+                <button class="btn btn-primary" onclick="calcular()">Calcular</button>
+            </div>
+            <div id="resultado" class="text-center">
+                <div class="planos">
+                    <div class="plano">
+                        <div class="plano-nome">Plano Básico</div>
+                        <div class="operadoraA">Operadora A: R$ <div id="basicoA" style="display: inline;"></div></div>
+                        <div class="operadoraB">Operadora B: R$ <div id="basicoB" style="display: inline;"></div></div>
+                    </div>
+                    <div class="plano">
+                        <div class="plano-nome">Plano Standard</div>
+                        <div class="operadoraA">Operadora A: R$ <div id="standardA" style="display: inline;"></div></div>
+                        <div class="operadoraB">Operadora B: R$ <div id="standardB" style="display: inline;"></div></div>
+                    </div>
+                    <div class="plano">
+                        <div class="plano-nome">Plano Premium</div>
+                        <div class="operadoraA">Operadora A: R$ <div id="premiumA" style="display: inline;"></div></div>
+                        <div class="operadoraB">Operadora B: R$ <div id="premiumB" style="display: inline;"></div></div>
+                    </div>
+                </div>
+                <div class="plano-final" >
+                    <h3>Plano Ideal:</h3>
+                    <div>Mais Barato: R$ <span id="maisBaratoGeral"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html> -->
